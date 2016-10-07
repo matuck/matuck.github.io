@@ -102,7 +102,7 @@ pinterest-share: True
 pocket-share: True
 vkontakte-share: True
 
-disqus-shortname: "panossakkos"
+disqus-shortname: "matuck"
 
 syntax-highlight: True
 
@@ -126,7 +126,7 @@ timeline-img: "/img/timeline/default.png"
 # Contact #
 ###########
 
-email: "your@email.here"
+email: "matuck@matuck.com"
 
 ################
 # Author Blurb #
@@ -144,6 +144,8 @@ author_blurb_image: "/img/author.png"
 ##################
 
 social:
+  - title: "linkedin"
+    url: "https://www.linkedin.com/in/mitchelltuck"
   - title: "facebook"
     url: "https://www.facebook.com/mitch.tuck"
   - title: "twitter"
