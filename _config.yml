@@ -136,8 +136,8 @@ email: "matuck@matuck.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "John Smith is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
-author_blurb_image: "/img/author.png"
+author_blurb: "Mitch Tuck is a technologist.  He has worked in various areas around technology.  He has worked as both a developer and in frastructure on networks and servers.  He enjoys technology in almost all forms."
+author_blurb_image: "/img/me.png"
 
 ##################
 # Social Buttons #
