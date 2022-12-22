@@ -30,7 +30,7 @@ force-https: false
 
 lang: "en"
 author: "Mitch Tuck"
-title: "{ Mitch Tuck }"
+title: "Mitch Tuck"
 description: "Blog and website of Mitch Tuck, blogging mainly for tech. Opinions expressed are mine."
 keywords: "tuck, mitch, matuck, C#, C++, Javascript, Node.js, nginx, apache, mysql, mongodb"
 favicon: "/img/favicon.ico"
@@ -58,7 +58,7 @@ lines: # You can add HTML Tags in the Text
   - text: "First, solve the problem. Then, write the code."
   - text: "Before software can be reusable it first has to be usable."
 
-me-img: "/img/me.png"
+me-img: "/img/me2.jpeg"
 
 ##############################
 # Color the browser elements #
@@ -137,7 +137,7 @@ email: "matuck@matuck.com"
 
 # if the author_blurb is not set, then this feature is skipped
 author_blurb: "Mitch Tuck is a technologist.  He has worked in various areas around technology.  He has worked as both a developer and in frastructure on networks and servers.  He enjoys technology in almost all forms."
-author_blurb_image: "/img/me.png"
+author_blurb_image: "/img/me2.jpeg"
 
 ##################
 # Social Buttons #
@@ -162,14 +162,6 @@ social:
 ############
 
 404-img: "/img/labtocat.png"
-
-##################
-# GPG on Keybase #
-##################
-
-keybase-username: matuck
-keybase-in-social: True
-keybase-in-footer: True
 
 ################################################################################
 
