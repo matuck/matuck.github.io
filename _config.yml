@@ -96,11 +96,11 @@ fb-share: True
 twitter-share: True
 linkedin-share: True
 reddit-share: True
-google-plus-share: True
+google-plus-share: false
 tumblr-share: True
 pinterest-share: True
-pocket-share: True
-vkontakte-share: True
+pocket-share: false
+vkontakte-share: false
 
 disqus-shortname: "matuck"
 
@@ -161,7 +161,7 @@ social:
 # 404 page #
 ############
 
-404-img: "/img/labtocat.png"
+missing-img: "/img/labtocat.png"
 
 ################################################################################
 
