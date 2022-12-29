@@ -158,9 +158,9 @@ missing-img: "/img/labtocat.png"
 # Sections shown in the index page
 
 pages_list:
-  About: 'about'
+  About: 'about.html'
   Blog: 'latest-post'
-  Contact: 'contact'
+  Contact: 'contact.html'
 
 # Exclusion list from the generated _site
 

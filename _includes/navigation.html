@@ -28,7 +28,7 @@
           <!-- Scroll to section for each page in index -->
           {% for p in site.pages_list %}
             <li>
-              <a class="page-scroll" href="#{{ p[1] }}"> {{p[0]}} </a>
+              <a class="page-scroll" href="{{ p[1] }}"> {{p[0]}} </a>
             </li>
           {% endfor %}
 
@@ -43,7 +43,7 @@
                 <a href="{{site.baseurl}}/blog/"> {{p[0]}} </a>
               {% endif %}
             {% else %}
-                <a href="{{site.baseurl}}/#{{ p[1] }}"> {{p[0]}} </a>
+                <a href="{{site.baseurl}}/{{ p[1] }}"> {{p[0]}} </a>
             {% endif %}
             </li>
           {% endfor %}

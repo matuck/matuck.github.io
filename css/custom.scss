@@ -14,3 +14,27 @@ img.comptiabadge {
 	width: 120px;
 	display: inline;
 }
+
+section.content-section {
+	h2 {
+		text-align: center;
+	}
+
+}
+.centertext {
+	text-align: center;
+}
+
+.roundpic {
+	border-radius: 50%;
+}
+
+.roundborderpic {
+	border-radius: 50%;
+	border: 4px solid white;
+}
+
+.floatimageleft {
+	float: left;
+	margin: 10px;
+}
