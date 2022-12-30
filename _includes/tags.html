@@ -1,0 +1,13 @@
+<div>
+	<strong>Tags</strong>
+	<div>
+		{% assign tags = site.data.tags | sort %}
+		{% for tag in tags %}
+			<div>
+				<a class="tag" href="{{site.baseurl}}/tags/{{ tag[0]|downcase }}.html">
+					{{ tag[0] }} [{{tag[1]}}] 
+				</a>
+			</div>
+		{% endfor %}
+	</div>
+</div>

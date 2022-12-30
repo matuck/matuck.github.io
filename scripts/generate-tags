@@ -4,7 +4,7 @@ require 'yaml'
 
 POSTS_DIR = '_posts/'
 TAGS_DIR = 'tags/'
-
+tags = {}
 Dir.foreach(POSTS_DIR) do |post|
 
   next if post == '.' or post == '..' or post == '.DS_Store'
@@ -12,8 +12,12 @@ Dir.foreach(POSTS_DIR) do |post|
   unless (postYaml['tags'] == nil)
     postYaml['tags'].each{|tag|
 
+      if( tags[tag] )
+        tags[tag] = tags[tag] + 1
+      else
+        tags[tag] = 1
+      end
       tag.downcase!
-
       unless File.exist?(TAGS_DIR + tag + '.html')
 
         puts('[+] Generating #' + tag + ' page')
@@ -26,3 +30,4 @@ Dir.foreach(POSTS_DIR) do |post|
   end
 
 end
+File.open('_data/tags.yml', 'w'){|f| YAML.dump(tags, f)}

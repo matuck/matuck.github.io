@@ -10,22 +10,30 @@
 
     {% include navigation.html %}
 
-    <section id="page" class="container content-section text-center">
+    <section id="page" class="container content-section">
 
       <div class="row">
-        <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+        <div class="col-md-8 col-md-offset-1">
 
 
         {{ page.content | markdownify }}
 
         <div>
           {% for post in paginator.posts %}
-            {% include post-list.html%}
+            {% include post-list-desc.html%}
           {% endfor %}
         </div>
 
         {% include pagination.html %}
 
+        </div>
+        <div class="col-md-2">
+          <div class="row pb-1">
+            {% include categories.html %}
+          </div>
+          <div class="row pb-1">
+            {% include tags.html %}
+          </div>
         </div>
       </div>
     </section>

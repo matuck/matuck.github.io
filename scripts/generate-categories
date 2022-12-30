@@ -4,14 +4,17 @@ require 'yaml'
 
 POSTS_DIR = '_posts/'
 CATEGORIES_DIR = 'categories/'
+categories = []
 
 Dir.foreach(POSTS_DIR) do |post|
-
   next if post == '.' or post == '..' or post == '.DS_Store'
   postYaml = YAML.load_file(POSTS_DIR + post)
   unless (postYaml['category'] == nil)
     category = postYaml['category']
-
+    
+    if(!categories.include?(category))
+      categories.push(category)
+    end
     unless File.exist?(CATEGORIES_DIR + category.downcase + '.html')
 
       puts('[+] Generating #' + category + ' page')
@@ -24,3 +27,4 @@ Dir.foreach(POSTS_DIR) do |post|
   end
 
 end
+File.open('_data/categories.yml', 'w'){|f| YAML.dump(categories, f)}

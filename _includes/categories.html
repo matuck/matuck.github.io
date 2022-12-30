@@ -1,0 +1,13 @@
+<div>
+	<strong>Categories</strong>
+	<div>
+		{% assign categories = site.data.categories | sort %}
+		{% for category in categories %}
+			<div>
+				<a class="category" href="{{site.baseurl}}/categories/{{ category | downcase }}.html">
+					{{ category }}
+				</a>
+			</div>
+		{% endfor %}
+	</div>
+</div>
