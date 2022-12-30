@@ -123,7 +123,7 @@ email: "matuck@matuck.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Mitch Tuck is a technologist.  He has worked in various areas around technology.  He has worked as both a developer and in frastructure on networks and servers.  He enjoys technology in almost all forms."
+author_blurb: "Mitch Tuck is a technologist.  He has worked in various areas around technology.  He has worked as both a developer and infrastructure on networks and servers.  He enjoys technology in almost all forms."
 author_blurb_image: "/img/me2.jpeg"
 
 ##################
