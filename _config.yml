@@ -157,7 +157,8 @@ missing-img: "/img/labtocat.png"
 # Sections shown in the index page
 
 pages_list:
-  Blog: ''
+  Blog: '/'
+  Search: 'search.html'
   About: 'about.html'
   Contact: 'contact.html'
 

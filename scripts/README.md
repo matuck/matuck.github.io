@@ -10,6 +10,9 @@ serve
 new-post <title>
   - Creates a new post under \_posts
 
+prepublish
+  - Runs the below generate scripts and gives helpful information about git
+
 generate-category
   - Generate all the categories that are used in the \_posts
 

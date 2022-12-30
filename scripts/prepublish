@@ -1,0 +1,6 @@
+#!/bin/bash
+
+./scripts/generate-categories
+./scripts/generate-tags
+
+echo "Please look at git for any changed files and commit and publish."

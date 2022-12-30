@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<!-- About Start -->
+
+<section id="search" class="container content-section text-center">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      {{ page.content | markdownify }}
+      <!-- Html Elements for Search -->
+      <div id="search-container">
+        <input type="text" id="search-input" placeholder="search...">
+        <ul id="results-container"></ul>
+      </div>
+        
+        <!-- Script pointing to search-script.js -->
+        <script src="/js/simple-jekyll-search.min.js" type="text/javascript"></script>
+        
+        <!-- Configuration -->
+        <script>
+        SimpleJekyllSearch({
+          searchInput: document.getElementById('search-input'),
+          resultsContainer: document.getElementById('results-container'),
+          json: '/search.json'
+        })
+        </script>
+    </div>
+  </div>
+</section>
+
+<!-- About End -->
