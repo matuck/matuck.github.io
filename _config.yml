@@ -4,6 +4,9 @@
 # NB! Set your site's url, otherwise stuff will break :)
 
 url: "http://www.matuck.com"
+plugins: [jekyll-paginate]
+
+dateformat: '%Y-%m-%d'
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
@@ -166,9 +169,9 @@ pages_list:
 
 exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
 
-# Pagination path
-
-paginate_path: "blog/page:num/"
+# Pagination
+paginate: 2 # the number of items per page
+paginate_path: "blog/page:num/" # the path for the pages
 
 # Enable minification SASS
 

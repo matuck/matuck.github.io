@@ -3,24 +3,16 @@ layout: default
 ---
 <!-- About Start -->
 
-<section id="{{ page.section-type }}" class="container content-section">
+<section id="bloglatest" class="container content-section">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
 
       {{ page.content | markdownify }}
       {% assign recentposts = site.posts | sort:"date" | reverse | limit: site.numberoflatestposts %}
-      {% for post in  recentposts %}
-      <h4> <strong> {{ post.date | date_to_string }} </strong>
-        <small>.
-          <a class="category" href="{{site.baseurl}}/categories/{{post.category | downcase}}.html">
-            {{ post.category }}
-          </a>
-        .</small>
-        <strong> <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a> </strong>
-        <small> <a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comments</a></small>
-      </h4>
-
-      {{ post.content | strip_html | markdownify | truncatewords: site.post-preview-words }}
+      
+      {% for post in recentposts %}
+      {% assign dateformatx = site.dateformat %}
+        {% include post-list-desc.html %}
       {% endfor %}
       <h4><a href="{{site.baseurl}}/blog/">Archive</a></h4>
 
