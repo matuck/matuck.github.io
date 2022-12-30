@@ -170,7 +170,7 @@ pages_list:
 exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
 
 # Pagination
-paginate: 2 # the number of items per page
+paginate: 10 # the number of items per page
 paginate_path: "blog/page:num/" # the path for the pages
 
 # Enable minification SASS
