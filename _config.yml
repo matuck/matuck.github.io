@@ -109,10 +109,6 @@ disqus-shortname: "matuck"
 
 syntax-highlight: True
 
-# First image of the Timeline
-
-timeline-img: "/img/timeline/default.png"
-
 ###########
 # Contact #
 ###########
