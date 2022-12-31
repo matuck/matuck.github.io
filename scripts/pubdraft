@@ -1,0 +1,11 @@
+#!/bin/bash
+
+drafts=(_drafts/*)
+
+select draft in ${drafts}; do
+	newfile=_posts/$(date +%Y-%m-%d)-${draft/_drafts\//}
+	break
+done
+mv $draft $newfile
+
+./scripts/prepublish

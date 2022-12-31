@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require 'date'
+
+POSTS_DIR = '_drafts/'
+
+post = ARGV[0]
+
+
+File.open(POSTS_DIR + post.tr(" ", "-") + '.md', 'w') {|f| f.write(
+  "---\nlayout: post\nsection-type: post\ntitle: "+ post +"\ncategory: Category\ntags: [ 'tag1', 'tag2' ]\n---")
+}
+
+puts('[+] Created ' + post + ' post')
