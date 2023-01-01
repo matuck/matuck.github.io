@@ -5,9 +5,7 @@ title: Completing My Masters
 category: Education
 tags: [ 'college', 'masters' ]
 ---
-## Completing my Masters
-
-College has been a long journey for me. I started college right after highschool.  I attended for roughly a year.  At that time I stopped going and decided college was not for me.  I continued working and trying to break into the IT field.  I completed several computer certifications, and eventually landed my first IT job.
+<img class="floatimageleft" src="/img/apu.png" width="200px"/>College has been a long journey for me. I started college right after highschool.  I attended for roughly a year.  At that time I stopped going and decided college was not for me.  I continued working and trying to break into the IT field.  I completed several computer certifications, and eventually landed my first IT job.
 
 I worked for Shaw Industries for about 10 years.  I help several positions at Shaw growing my career.  After 10 years Shaw layed me off (as well as many others).  I had difficulty finding a job at that time.  Everywhere I went they wanted a college degree.  I deviced to go back to school.  This was going to be a difficult task though, as I had a family now.  I needed something that was going to be flexible with my schedule.  I eventually chose an online school, American Public University.  
 
