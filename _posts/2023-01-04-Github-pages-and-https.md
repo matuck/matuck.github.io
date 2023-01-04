@@ -5,7 +5,7 @@ title: Github pages and https
 category: Tech
 tags: [ 'github', 'webhosting', 'security' ]
 ---
-I have been using github to host my website for sometime now.  I did not have it enabled for https due to the complications of setting this up.  This will go through the complications of setting up https with a custom domain.  I went to Enforce https and I reveceived the messge "Unavailable for your site because your domain is not properly configured to support HTTPS".  So in researching the problem I found several problems that kept me from enabling https on the domain.
+<img class="floatimageleft borderless" src="/img/githublogo.png"  width="200px" />I have been using github to host my website for sometime now.  I did not have it enabled for https due to the complications of setting this up.  This will go through the complications of setting up https with a custom domain.  I went to Enforce https and I reveceived the messge "Unavailable for your site because your domain is not properly configured to support HTTPS".  So in researching the problem I found several problems that kept me from enabling https on the domain.
 
 The first problem I encounted was my dns a, aaaa, and cname records were not setup correctly.
 A records should be set to
