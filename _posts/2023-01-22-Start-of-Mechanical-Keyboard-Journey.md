@@ -1,0 +1,19 @@
+---
+layout: post
+section-type: post
+title: Start of Mechanical Keyboard Journey
+category: Tech
+tags: [ 'mechanical', 'keyboard', "ergonomics", "60%", "sofle", "dactyl manuform" ]
+---
+
+<img class="floatimageleft borderless" src="/img/generickeyboard.jpg"  width="200px" />I honestly never thought much about the keyboard I use.  I have long been a fan of ergonomic keyboards. My hands tend to relax more and get less fatigued when using the.  I up until have used cheaper membrane keyboards. However, several people I work with use mechanical kebyards and swear buy them.  This led me to believe I wanted to try one.
+
+With my recent idea of wanting to try one, and with an upcoming certifcation test that required I have a wired keyboard, I thought this was the perfect time.  I shopped around for a bit and found out how expensive mechanical keyboards could be.  Since I was just starting in this, and I wasnt sure I did not want to spend a ton of money this keyboard.
+
+<img class="floatimageleft borderless" src="/img/dk61se.jpg"  width="200px" />My first mechanial keyboard [DIERYA DK61SE](https://amzn.to/3HnVvve) (paid link).  This is a 60% keyboard.  It is really small on the desk.  If you are use to using your arrow keys alot or having the ability to use a 10-key this is not the keyboard for you.  If you do like a small keyboard, this is a great economical solution. At the time of of this writing (January 22, 2023 01:00pm) it was price at $24.99.  The keyboard has backlighting, but I disable this feature.  My personal taste I do not care for the rainbow backlighting.  The colors are fixed so they cannot be changed.  You can change the effect or patery of the backlighting.  Overall I love the feel of the keys.  My biggest problem with this keyboard is I prefer ergonomic keyboards.  After a short period of typing my hands would get rather tired.  Liking the feel of the keys I decided to continue my keyboard search.
+
+<img class="floatimageleft borderless" src="/img/ErgoTKL1.jpg"  width="200px" />My next and current keyboard is [Cloud Nine ErgoTKL](https://amzn.to/3XQozRe) (paid link). I absolute love this keyboard.  This keyboard is pretty customizable and fells absolutely amazing.  At the time of of this writing (January 22, 2023 01:00pm) it was price at $179.99.  The backlighting on this keyboard is fully customizable.  There are many effects you can also choose from.  For my taste I have it set to a static color.  There are 4 macro buttons that can be programmed with or without the software.  My biggest complaint about this keyboard is currently the software is windows only.  I have worked around this with a Windows virtual machine on both my mac and linux machine.  I can pass the keyboard through and program the keyboard.  The settings are retained even without the software running.  The split keyboard allows me to space my hands out to have the most comfortable typing experience.  If you are using this keyboard for gaming you can unplug the right half and move it out of the way.  The keyboard even without the 10-key section is still rather large.  I forsee this being my keyboard for awhile.
+
+I am not done with my mechanical keyboad journey yet though.  I am interested in a few other mechanical keyboards.  Specifically I am interested in trying a keyboard with a ortholinear or columnar layout.  This is different than the tradtional staggard layout keyboards.  There are few that are ready made on the internet, but I am even more interested in building my own custom keyboard.  The ones that currently catch my eye is the sofle or a manuform dactyl.  I definetly see me building one of these in the future.  So if you are interested in one of these stay tuned you will probably see one or more post on these in the future.
+
+<img class="floatimageleft borderless" src="/img/sofle.jpg" alt="sofle" width="200px" /><img class="borderless" src="/img/dactylmanuform.webp"  alt="dactylmanuform" width="200px" />
