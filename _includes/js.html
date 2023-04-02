@@ -40,7 +40,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 {% endif %}
 
 {% if jekyll.environment == "production" %}
-  {% if site.google-tracking-id %}
+  {% if site.google-measurement-id %}
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google-measurement-id }}"></script>
