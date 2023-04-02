@@ -39,21 +39,6 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 {% endif %}
 
-{% if jekyll.environment == "production" %}
-  {% if site.google-measurement-id %}
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google-measurement-id }}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', '{{ site.google-measurement-id }}');
-</script>
-  {% endif %}
-{% endif %}
-
 {% if page.section-type == "post" %}
 
   <!-- Share buttons Start -->
