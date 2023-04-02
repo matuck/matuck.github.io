@@ -105,8 +105,6 @@ pinterest-share: True
 pocket-share: false
 vkontakte-share: false
 
-disqus-shortname: "matuck"
-
 syntax-highlight: True
 
 ###########
