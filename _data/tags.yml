@@ -4,7 +4,7 @@ college: 1
 masters: 1
 github: 1
 webhosting: 1
-security: 2
+security: 3
 certification: 1
 redhat: 1
 mechanical: 2
@@ -17,7 +17,8 @@ VM: 1
 Proxmox: 1
 Cloud-Init: 1
 HomeLab: 1
-linux: 1
-debian: 1
-luks: 1
-tutorial: 1
+linux: 2
+debian: 2
+luks: 2
+tutorial: 2
+fido2: 1
