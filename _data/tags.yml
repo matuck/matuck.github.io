@@ -1,19 +1,23 @@
 ---
 redo: 2
+college: 1
+masters: 1
+github: 1
+webhosting: 1
+security: 2
+certification: 1
+redhat: 1
 mechanical: 2
 keyboard: 2
 ergonomics: 2
 60%: 2
 sofle: 2
 dactyl manuform: 1
-github: 1
-webhosting: 1
-security: 1
 VM: 1
 Proxmox: 1
 Cloud-Init: 1
 HomeLab: 1
-college: 1
-masters: 1
-certification: 1
-redhat: 1
+linux: 1
+debian: 1
+luks: 1
+tutorial: 1
