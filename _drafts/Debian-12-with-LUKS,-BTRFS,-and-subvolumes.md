@@ -3,9 +3,9 @@ layout: post
 section-type: post
 title: Debian 12 with LUKS, BTRFS, and subvolumes
 category: Tech
-tags: [ 'linux', 'debian', 'security', 'luks' ]
+tags: [ 'linux', 'debian', 'security', 'luks', 'tutorial' ]
 ---
-Debian is one of my favorite distributions.  The installer leaves a little to be desired with setting up BTRFS and LUKS.  This tutorial is designed to walk you through the steps of setting up LUKS and BTRFS with subvolumes.   
+<img class="floatimageleft borderless" src="/img/debianlogo.svg"  width="200px" /> Debian is one of my favorite distributions.  The installer leaves a little to be desired with setting up BTRFS and LUKS.  This tutorial is designed to walk you through the steps of setting up LUKS and BTRFS with subvolumes.   
 
 ## Prepartioning
 For this part you will need Debian installation medium.  The process is pretty simple but you will use the expert Install instread of the normal install.
@@ -66,11 +66,11 @@ This is the most complicated part of the install.  Do not continue the noromal i
   ```
 * Mount your new filesystems back to target
   ```bash
-  mount -o noatime,compress=lzo,space_cache,subvol=@ /dev/mapper/nvme0n1p3_crypt /target
+  mount -o ubvol=@ /dev/mapper/nvme0n1p3_crypt /target
   mkdir -p /target/{home,var,snapshots}
-  mount -o noatime,compress=lzo,space_cache,subvol=@home /dev/mapper/nvme0n1p3_crypt /target/home
-  mount -o noatime,compress=lzo,space_cache,subvol=@snapshots /dev/mapper/nvme0n1p3_crypt /target/snapshots
-  mount -o noatime,compress=lzo,space_cache,subvol=@var /dev/mapper/nvme0n1p3_crypt /target/var
+  mount -o subvol=@home /dev/mapper/nvme0n1p3_crypt /target/home
+  mount -o subvol=@snapshots /dev/mapper/nvme0n1p3_crypt /target/snapshots
+  mount -o subvol=@var /dev/mapper/nvme0n1p3_crypt /target/var
   mkdir /target/boot
   mount /dev/nvme0n1p2 /target/boot
   mount /dev/nvme0n1p1 /target/boot/efi 
@@ -85,7 +85,13 @@ This is the most complicated part of the install.  Do not continue the noromal i
   ```bash
   nano /target/mount/etc/fstab
   ```
-
+  Replace your root entry and add the neccessary entries like below.
+  ```f
+  /dev/mapper/nvme0n1p3_crypt /               btrfs   defaults,subvol=@ 0       0
+  /dev/mapper/nvme0n1p3_crypt /home           btrfs   defaults,subvol=@home 0       0
+  /dev/mapper/nvme0n1p3_crypt /var            btrfs   defaults,subvol=@var 0       0
+  /dev/mapper/nvme0n1p3_crypt /snapshots      btrfs   defaults,subvol=@snapshots 0       0
+  ```
 * Cleanup old rootfs
   ```bash
   rm -rf /mnt/@rootfs/etc /mnt/@rootfs/media /mnt/@rootfs/boot
@@ -96,6 +102,6 @@ This is the most complicated part of the install.  Do not continue the noromal i
 * Hit ctrl+alt+f1 to go back to installer
 
 ## Finishing up
-  Continue on as a normal debian install
+From here is a normal Debian install.  Continue on as you would any other install.
 
-  see next part of this series for adding luks with fido2 on debian
+See next part of this series for adding luks with fido2 on debian
