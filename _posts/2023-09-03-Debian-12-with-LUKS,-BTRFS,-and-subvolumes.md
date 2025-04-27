@@ -66,7 +66,7 @@ This is the most complicated part of the install.  Do not continue the noromal i
   ```
 * Mount your new filesystems back to target
   ```bash
-  mount -o ubvol=@ /dev/mapper/nvme0n1p3_crypt /target
+  mount -o subvol=@ /dev/mapper/nvme0n1p3_crypt /target
   mkdir -p /target/{home,var,snapshots}
   mount -o subvol=@home /dev/mapper/nvme0n1p3_crypt /target/home
   mount -o subvol=@snapshots /dev/mapper/nvme0n1p3_crypt /target/snapshots
