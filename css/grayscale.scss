@@ -420,13 +420,13 @@ body {
            padding: 20px 0;
          }
          #hand-swipe {
+            font-size: 80px;
+            display: block;
+            position: relative;
+            animation: swipe ease-in-out 1s alternate infinite;
             @media(min-width:992px) {
               font-size: 100px;
             }
-            font-size: 80px;
-             display: block;
-             position: relative;
-             animation: swipe ease-in-out 1s alternate infinite;
          }
      }
  }
