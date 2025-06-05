@@ -1,8 +1,7 @@
 ---
 ---
 
-@import "variables";
-@import "mixins";
+@use "variables" as vars;
 
 /*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
@@ -14,8 +13,8 @@ body {
     width: 100%;
     height: 100%;
     font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: $font-color;
-    background-color: $primary-color;
+    color: vars.$font-color;
+    background-color: vars.$primary-color;
 }
 
 html {
@@ -67,23 +66,23 @@ div {
 }
 
 a {
-    color: $secondary-color;
+    color: vars.$secondary-color;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     &:hover,
     &:focus {
         text-decoration: none;
-        color: darken($secondary-color,20%);
+        color: darken(vars.$secondary-color,20%);
     }
 }
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba($font-color, 0.3);
+    border-bottom: 1px solid rgba(vars.$font-color, 0.3);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: $navbar-sm-background-color;
+    background-color: vars.$navbar-sm-background-color;
 
     /* Fix height limit and scroll for small screen and many items menu */
     max-height: 100%;
@@ -92,7 +91,7 @@ a {
     .navbar-toggle {
         padding: 4px 6px;
         font-size: 16px;
-        color: $navbar-color;
+        color: vars.$navbar-color;
         &:focus,
         &:active {
             outline: none;
@@ -105,8 +104,8 @@ a {
         }
     }
     a {
-        color: $navbar-color;
-        @if $header-text-shadow{
+        color: vars.$navbar-color;
+        @if vars.$header-text-shadow{
             text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
         }
     }
@@ -120,20 +119,20 @@ a {
                 &:hover {
                     /* color: rgba($font-color, 0.8); */
                     outline: none;
-                    background-color: rgba($font-color, 0.3);
+                    background-color: rgba(vars.$font-color, 0.3);
                 }
                 &:focus,
                 &:active {
                     outline: none;
-                      background-color: rgba($font-color, 0.3);
+                      background-color: rgba(vars.$font-color, 0.3);
                 }
             }
             &.active {
                 outline: none;
                 a {
-                    background-color: rgba($font-color, 0.3);
+                    background-color: rgba(vars.$font-color, 0.3);
                     &:hover {
-                        color: $navbar-color;
+                        color: vars.$navbar-color;
                     }
                 }
             }
@@ -143,14 +142,14 @@ a {
         padding: 20px 0;
         border-bottom: none;
         letter-spacing: 1px;
-        background: $navbar-lg-background;
+        background: vars.$navbar-lg-background;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         &.top-nav-collapse {
             padding: 0;
-            background: $navbar-lg-collapse-background-color;
-            border-bottom: 1px solid rgba($font-color, 0.3);
+            background: vars.$navbar-lg-collapse-background-color;
+            border-bottom: 1px solid rgba(vars.$font-color, 0.3);
         }
     }
 }
@@ -161,11 +160,11 @@ a {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: $intro-text-color;
+    color: vars.$intro-text-color;
     {% if site.background-img %}
     background: url({{ site.background-img }}) no-repeat bottom center scroll;
     {% endif %}
-    background-color: $header-background-color;
+    background-color: vars.$header-background-color;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -178,7 +177,7 @@ a {
         }
         .intro-text {
             font-size: 18px;
-            @if $navbar-text-shadow {
+            @if vars.$navbar-text-shadow {
                 text-shadow: 1px 0 1px #000;
             }
         }
@@ -241,7 +240,7 @@ a {
         display: block;
         max-width: 100%;
         height: auto;
-        border: 1px solid $font-color;
+        border: 1px solid vars.$font-color;
     }
     /* Added in { Personal } */
     ul,
@@ -261,7 +260,7 @@ a {
       /* Override any img styles to ensure Emojis are displayed inline */
       margin: 0px !important;
       display: inline !important;
-      border: 1px solid $primary-color !important;
+      border: 1px solid vars.$primary-color !important;
     }
 
     /* Added in { Personal } */
@@ -284,17 +283,17 @@ a {
 }
 
 .btn-default {
-    border: 1px solid $secondary-color;
-    color: $secondary-color;
+    border: 1px solid vars.$secondary-color;
+    color: vars.$secondary-color;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid $secondary-color;
+    border: 1px solid vars.$secondary-color;
     outline: 0;
     color: #000;
-    background-color: $secondary-color;
+    background-color: vars.$secondary-color;
 }
 
 /* Added in { Personal } */
@@ -306,7 +305,7 @@ ul.social-buttons li a {
     font-size: 20px;
     line-height: 40px;
     outline: 0;
-    color: $social-buttons-color;
+    color: vars.$social-buttons-color;
     background-color: #222;
 
     -webkit-transition: all .3s;
@@ -317,7 +316,7 @@ ul.social-buttons li a {
     &:focus,
     &:active {
         color: #222;
-        background-color: darken($social-buttons-color, 10%);
+        background-color: darken(vars.$social-buttons-color, 10%);
     }
 }
 
@@ -332,13 +331,13 @@ footer {
 ::-moz-selection {
     text-shadow: none;
     background: #fcfcfc;
-    background: rgba($font-color, 0.2);
+    background: rgba(vars.$font-color, 0.2);
 }
 
 ::selection {
     text-shadow: none;
     background: #fcfcfc;
-    background: rgba($font-color, 0.2);
+    background: rgba(vars.$font-color, 0.2);
 }
 
 img::selection {
@@ -350,7 +349,7 @@ img::-moz-selection {
 }
 
 body {
-    -webkit-tap-highlight-color: rgba($font-color, 0.2);
+    -webkit-tap-highlight-color: rgba(vars.$font-color, 0.2);
 }
 
 /* Added in { Personal } for Typed Cursor in Header */
@@ -432,12 +431,12 @@ body {
  }
 
 .ok-btn {
-  background-color: $primary-color;
-  color: $secondary-color;
+  background-color: vars.$primary-color;
+  color: vars.$secondary-color;
 }
 
  /* END Style for swipe instruction section */
 
 .fourofour {
-  border: 1px solid $primary-color !important;
+  border: 1px solid vars.$primary-color !important;
 }
