@@ -2,6 +2,7 @@
 ---
 
 @use "variables" as vars;
+@use "sass:color";
 
 /*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
@@ -73,7 +74,7 @@ a {
     &:hover,
     &:focus {
         text-decoration: none;
-        color: darken(vars.$secondary-color,20%);
+        color: color.adjust(vars.$secondary-color,$lightness: -20%);
     }
 }
 
@@ -316,7 +317,7 @@ ul.social-buttons li a {
     &:focus,
     &:active {
         color: #222;
-        background-color: darken(vars.$social-buttons-color, 10%);
+        background-color: color.adjust(vars.$social-buttons-color,$lightness: -10%);
     }
 }
 
