@@ -18,11 +18,11 @@ Dir.foreach(POSTS_DIR) do |post|
         tags[tag] = 1
       end
       tag.downcase!
-      unless File.exist?(TAGS_DIR + tag + '.html')
+      unless File.exist?(TAGS_DIR + tag.tr(" ","+") + '.html')
 
         puts('[+] Generating #' + tag + ' page')
 
-        File.open(TAGS_DIR + tag + '.html', 'w') {|f| f.write(
+        File.open(TAGS_DIR + tag.tr(" ","+") + '.html', 'w') {|f| f.write(
         "---\nlayout: tag\nsection-type: tag\ntitle: " + tag + "\n---\n## Tag")}
 
       end
