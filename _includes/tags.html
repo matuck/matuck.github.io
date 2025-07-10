@@ -4,7 +4,7 @@
 		{% assign tags = site.data.tags | sort %}
 		{% for tag in tags %}
 			<div>
-				<a class="tag" href="{{site.baseurl}}/tags/{{ tag[0]|downcase }}.html">
+				<a class="tag" href="{{site.baseurl}}/tags/{{ tag[0]|downcase | url_encode }}.html">
 					{{ tag[0] }} [{{tag[1]}}] 
 				</a>
 			</div>
