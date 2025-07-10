@@ -18,7 +18,7 @@
     <small><a href="{{site.baseurl}}{{post.url}}#giscus">Comments</a></small>
     
   </h4>
-  {{ post.content | markdownify | truncatewords: site.post-preview-words }}
+  {{ post.content | markdownify | html_truncatewords: site.post-preview-words }}
 </article>
 
 <!-- Post List End -->
