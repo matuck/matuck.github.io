@@ -56,7 +56,7 @@ apt install dracut fido2-tools
 Create a file called 11-fido.conf in /etc/dracut.conf.d .  Make sure this file user and group are root.  Contents of the file are below 
 ```conf
 ## Spaces in the quotes are critical.
-install_optional_items+=” /usr/lib/x86_64-linux-gnu/libz.so.* “
+install_optional_items+=" /usr/lib/x86_64-linux-gnu/libz.so.* "
 
 ## Ugly workround because the line above doesn't fetch
 ## dependencies of libfido2.so
