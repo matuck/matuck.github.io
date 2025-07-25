@@ -21,8 +21,9 @@ linux: 2
 debian: 2
 luks: 2
 tutorial: 2
-fido2: 1
+Bronco Interior: 3
 Bronco Storage: 1
-Bronco Interior: 2
-Bronco Comms: 1
+Bronco Comms: 2
 Bronco Exterior: 1
+fido2: 1
+Bronco: 1
