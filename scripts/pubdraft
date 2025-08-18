@@ -1,6 +1,6 @@
 #!/bin/bash
 
-drafts=(_drafts/*)
+drafts=`ls _drafts/*.md`
 
 select draft in ${drafts}; do
 	newfile=_posts/$(date +%Y-%m-%d)-${draft/_drafts\//}
