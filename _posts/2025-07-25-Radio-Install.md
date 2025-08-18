@@ -3,7 +3,7 @@ layout: post
 section-type: post
 title: Radio Install
 category: Bronco
-tags: [ 'Bronco', 'Bronco Comms', 'Bronco Interior' ]
+tags: [ 'Bronco Comms', 'Bronco Interior' ]
 ---
 
 <img src="/img/IMG_0283.JPEG" width="50%" /><img src="/img/IMG_0280.JPEG" width="50%" />
